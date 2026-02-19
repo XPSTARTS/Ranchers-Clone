@@ -23,7 +23,7 @@ const CartSidebar = () => {
             <div className={`fixed top-0 right-0 h-full w-full md:w-96 bg-white/95 backdrop-blur-md shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${
                 isCartOpen ? 'translate-x-0' : 'translate-x-full'
             }`}>
-                <div className="bg-gradient-to-r from-orange-500 to-red-500 p-4 text-white">
+                <div className="bg-linear-to-r from-orange-500 to-red-500 p-4 text-white">
                     <div className="flex justify-between items-center">
                         <div className="flex items-center gap-2">
                             <span className="text-2xl">🛒</span>

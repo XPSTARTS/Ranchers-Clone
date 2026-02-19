@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # 🍖 [Your Chosen Name] - Ranchers Food Website Clone
+=======
+# 🍖 RanchEats - Ranchers Food Website Clone
+>>>>>>> e25db453fd15b5df6606b3293debcce8ac771912
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
@@ -59,4 +63,8 @@ Want to run this project locally? Follow these steps:
 
 1. **Clone the repository**
    ```bash
+<<<<<<< HEAD
    git clone https://github.com/your-username/your-project-name.git
+=======
+   [git clone https://github.com/your-username/your-project-name.git](https://github.com/XPSTARTS/Ranchers-Clone)
+>>>>>>> e25db453fd15b5df6606b3293debcce8ac771912
