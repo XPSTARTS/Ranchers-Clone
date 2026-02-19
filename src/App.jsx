@@ -5,13 +5,15 @@ import Home from './components/Home'
 import About from './components/About'
 import RanchersExpansion from './components/RanchersExpansion'
 import NotFound from './components/NotFound'
+import CartSidebar from './components/CartSidebar';
+
 function App() {
 
   return (
     <div className='bg-[#212121] font-serif text-white min-h-screen overflow-hidden'>
 
       <Navbar />
-
+      <CartSidebar />
       <Routes>
           <Route path='/' element={ <Home />} />
           <Route path='/about' element={ <About />} />
