@@ -85,7 +85,6 @@ const Navbar = () => {
                 <div className='flex items-center gap-2 md:gap-4'>
                     <div className='flex gap-2'>
                         <div className='flex gap-4'>
-                            {/* Cart Button with Badge */}
                             <button
                                 onClick={() => setIsCartOpen(true)}
                                 className='relative text-2xl w-12 h-9 hover:bg-white/10 text-center rounded-lg transition-colors flex items-center justify-center text-white'

@@ -38,7 +38,6 @@ const CartSidebar = () => {
                     </div>
                 </div>
 
-                {/* Cart Items */}
                 <div className="grow overflow-y-auto p-4" style={{ maxHeight: 'calc(100vh - 180px)' }}>
                     {cartItems.length === 0 ? (
                         <div className="text-center mt-20">
