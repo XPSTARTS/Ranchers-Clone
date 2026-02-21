@@ -10,25 +10,25 @@ const Corousel = () => {
       id: 1,
       url: 'https://rancherscafe.com/_next/image?url=https%3A%2F%2Fstatic.rancherscafe.com%2Fapp-banners%2F10Off.jpg&w=1920&q=75',
       alt: 'Mountain landscape',
-      title: 'Beautiful Mountains'
+      title: ''
     },
     {
       id: 2,
       url: 'https://rancherscafe.com/_next/image?url=https%3A%2F%2Fstatic.rancherscafe.com%2Fapp-banners%2Fnew-year-banner.png&w=1920&q=75',
       alt: 'Forest with fog',
-      title: 'Misty Forest'
+      title: ''
     },
     {
       id: 3,
       url: 'https://rancherscafe.com/_next/image?url=https%3A%2F%2Fstatic.rancherscafe.com%2Fapp-banners%2Faward%2B%2Bbanner.png&w=1920&q=75',
       alt: 'Sunset in forest',
-      title: 'Golden Sunset'
+      title: ''
     },
     {
       id: 4,
       url: 'https://rancherscafe.com/_next/image?url=https%3A%2F%2Fstatic.rancherscafe.com%2Fapp-banners%2FMidnight%2Bbanner.jpg&w=1920&q=75',
       alt: 'Lake at sunset',
-      title: 'Serene Lake'
+      title: ''
     }
   ];
 
@@ -119,11 +119,6 @@ const Corousel = () => {
           </div>
         </div>
 
-        {isHovered && (
-          <div className="absolute top-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-xs sm:text-sm backdrop-blur-sm z-10">
-            ⏸️ Paused
-          </div>
-        )}
       </div>
     </div>
   );
