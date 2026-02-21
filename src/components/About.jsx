@@ -2,8 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='mt-10 mx-4 md:mx-8'>
-      {/* Tale Untold Section */}
+    <div className='mt-20 mx-4 md:mx-8'>
       <h1 className='font-extrabold text-orange-400 text-2xl md:text-3xl mb-4'>A Tale Untold</h1>
 
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-center'>
@@ -21,7 +20,6 @@ const About = () => {
         />
       </div>
 
-      {/* Why we are irresistible Section */}
       <div className='mt-12'>
         <h1 className='font-extrabold text-orange-400 text-2xl md:text-3xl mb-4'>Why we are irresistible?</h1>
 

@@ -10,9 +10,9 @@ const MiniNavbar = () => {
   }
 
   return (
-    <div className='h-15 flex gap-10 justify-center text-2xl font-bold bg-gray-600/20 items-center'>
+    <div className='h-auto min-h-15 flex gap-10 justify-center text-2xl font-bold bg-gray-600/20 items-center flex-wrap'>
 
-      <button onClick={() => scrollToSection("deals")} className="hover:text-orange-400 hover:border-b-2 hover:border-b-orange-400">Deals</button>
+      <button onClick={() => scrollToSection("deals")} className="hover:text-orange-400 hover:border-b-2 hover:border-b-orange-400 border-b-orange-400 border-b-4">Deals</button>
 
       <button onClick={() => scrollToSection("chicken")} className="hover:text-orange-400 hover:border-b-2 hover:border-b-orange-400">Chicken Burgers</button>
 
