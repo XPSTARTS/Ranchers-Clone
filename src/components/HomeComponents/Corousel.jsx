@@ -60,23 +60,24 @@ const Corousel = () => {
 
   return (
     <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
-      <div 
+      <div
         className="relative w-full rounded-xl overflow-hidden shadow-2xl bg-gray-900"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="relative w-full overflow-hidden">
+        {/* This wrapper uses aspect-ratio to maintain proportions on all screens */}
+        <div className="relative w-full overflow-hidden aspect-[16/9] sm:aspect-[16/7] md:aspect-[16/6]">
 
-          <div 
-            className="flex transition-transform duration-500 ease-in-out"
+          <div
+            className="absolute inset-0 flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {slides.map((slide) => (
-              <div key={slide.id} className="relative flex-none w-full">
-                <img 
-                  src={slide.url} 
+              <div key={slide.id} className="relative flex-none w-full h-full">
+                <img
+                  src={slide.url}
                   alt={slide.alt}
-                  className="w-full h-75 sm:h-100 md:h-125 object-cover"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/70 to-transparent p-4 sm:p-6">
                   <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold text-center">
@@ -94,7 +95,7 @@ const Corousel = () => {
           >
             ❮
           </button>
-          
+
           <button
             onClick={goToNext}
             className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/80 text-white hover:text-gray-800 rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-xl sm:text-2xl transition-all duration-300 backdrop-blur-sm z-10"
@@ -109,8 +110,8 @@ const Corousel = () => {
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
-                  index === currentIndex 
-                    ? 'bg-white scale-125 w-4 sm:w-6' 
+                  index === currentIndex
+                    ? 'bg-white scale-125 w-4 sm:w-6'
                     : 'bg-white/50 hover:bg-white/80'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
